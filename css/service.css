@@ -1,0 +1,254 @@
+body{
+    margin: 0;
+}
+#services{
+    height: 100vh;
+
+    background-color: #151925;
+    border-radius: 20px;
+    padding: 16px;
+}
+#services > h2{
+   text-align: center;
+   padding: 20px;
+   /* font-size: 1rem; */
+}
+h4{
+    font-size: 1.7rem;
+}
+.develop-card{
+    display: grid;
+    grid-template-columns: repeat(4 ,1fr);
+    gap: 12px;
+
+   
+    /* display: flex; */
+    /* justify-content: center; */
+    /* align-items: center; */
+
+}
+.work-card{
+    text-align: center;
+    font-size: 1.3rem;
+    background-color: #1C212D;
+    border-radius: 20px;
+
+    margin: 16px;
+
+    width: 380px;
+}
+.web-development img{
+   width: 30px;
+   height: 30px;
+
+   margin: 16px;
+}
+.web-development button{
+    margin: 12px;
+}
+.ui-ux img{
+    width: 25px;
+    height: 25px;
+
+    margin: 16px;    
+}
+.mobile-app-development img{
+    width: 25px;
+    height: 25px;
+
+    margin: 16px;
+}
+
+
+
+/* Mobile Small (320px - 374px) */
+@media screen and (min-width: 320px) and (max-width: 374px) {
+    #services {
+        height: auto;
+        padding: 10px;
+    }
+
+    .develop-card {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    .work-card {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    h4 {
+        font-size: 1.2rem;
+    }
+
+    .web-development img, .ui-ux img, .mobile-app-development img {
+        width: 20px;
+        height: 20px;
+        margin: 10px;
+    }
+
+    .web-development button, .ui-ux button, .mobile-app-development button {
+        margin: 10px;
+    }
+}
+
+/* Mobile Medium (375px - 424px) */
+@media screen and (min-width: 375px) and (max-width: 424px) {
+    #services {
+        height: auto;
+        padding: 12px;
+    }
+
+    .develop-card {
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+
+    .work-card {
+        width: 100%;
+        margin: 12px 0;
+    }
+
+    h4 {
+        font-size: 1.3rem;
+    }
+
+    .web-development img, .ui-ux img, .mobile-app-development img {
+        width: 22px;
+        height: 22px;
+        margin: 12px;
+    }
+
+    .web-development button, .ui-ux button, .mobile-app-development button {
+        margin: 12px;
+    }
+}
+
+/* Mobile Large (425px - 767px) */
+@media screen and (min-width: 425px) and (max-width: 767px) {
+    #services {
+        height: auto;
+        padding: 14px;
+    }
+
+    .develop-card {
+        grid-template-columns: 1fr;
+        gap: 14px;
+    }
+
+    .work-card {
+        width: 100%;
+        margin: 14px 0;
+    }
+
+    h4 {
+        font-size: 1.4rem;
+    }
+
+    .web-development img, .ui-ux img, .mobile-app-development img {
+        width: 24px;
+        height: 24px;
+        margin: 14px;
+    }
+
+    .web-development button, .ui-ux button, .mobile-app-development button {
+        margin: 14px;
+    }
+}
+
+/* Tablet (768px - 1023px) */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    #services {
+        height: auto;
+        padding: 16px;
+    }
+
+    .develop-card {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 16px;
+    }
+
+    .work-card {
+        width: 100%;
+        margin: 16px 0;
+    }
+
+    h4 {
+        font-size: 1.5rem;
+    }
+
+    .web-development img, .ui-ux img, .mobile-app-development img {
+        width: 26px;
+        height: 26px;
+        margin: 16px;
+    }
+
+    .web-development button, .ui-ux button, .mobile-app-development button {
+        margin: 16px;
+    }
+}
+
+/* Laptop (1024px - 1439px) */
+@media screen and (min-width: 1024px) and (max-width: 1439px) {
+    #services {
+        height: auto;
+        padding: 18px;
+    }
+
+    .develop-card {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 18px;
+    }
+
+    .work-card {
+        width: 100%;
+        margin: 18px 0;
+    }
+
+    h4 {
+        font-size: 1.6rem;
+    }
+
+    .web-development img, .ui-ux img, .mobile-app-development img {
+        width: 28px;
+        height: 28px;
+        margin: 18px;
+    }
+
+    .web-development button, .ui-ux button, .mobile-app-development button {
+        margin: 18px;
+    }
+}
+
+/* Laptop Large (1440px and above) */
+@media screen and (min-width: 1440px) {
+    #services {
+        height: auto;
+        padding: 20px;
+    }
+
+    .develop-card {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+    }
+
+    .work-card {
+        width: 100%;
+        margin: 20px 0;
+    }
+
+    h4 {
+        font-size: 1.7rem;
+    }
+
+    .web-development img, .ui-ux img, .mobile-app-development img {
+        width: 30px;
+        height: 30px;
+        margin: 20px;
+    }
+
+    .web-development button, .ui-ux button, .mobile-app-development button {
+        margin: 20px;
+    }
+}

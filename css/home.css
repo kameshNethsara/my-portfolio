@@ -1,0 +1,497 @@
+body{
+    margin: 0;
+    background-color: #151925;
+    color: white;
+
+   
+}
+header{
+    /* position: sticky;
+    top: 0vh;
+    background-color: black;
+    border-radius: 20px; */
+}
+.portfolio-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin: 32px;
+    font-size: 1.5rem;
+
+    
+}
+.navigations{
+   
+    /* padding: 12px; */
+}
+.navigations a{
+    text-decoration: none;
+    color: white;
+
+    margin: 20px;
+}
+
+#home {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* margin: 32px; */
+    height: 100vh;
+
+    background-color: #151925;
+    border-radius: 20px;
+    padding: 16px;
+}
+
+.home-details {
+    max-width: 50%;
+}
+.home-details h1,h2,span,p{
+   
+}
+.link-container {
+    display: flex;
+    /* justify-content: space-around;
+    align-items: center; */
+
+   
+}
+.link-container a img {
+    width: 30px;
+    height: 30px;
+    margin: 16px;
+    padding: 16px;
+}
+.my-img {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+
+    
+}
+.img-circle {
+    position: relative;
+    width: 350px; 
+    height: 350px;
+    border-radius: 50%;
+    background-color: #01EEFF;
+    box-shadow: 0px 0px 20px #01EEFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.img-circle img {
+    position: absolute;
+    /* bottom: 0;  */
+    width: auto;
+    height: 100%; /* Maintain aspect ratio */
+}
+
+
+/* button {
+    background-color: #01EEFF;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    font-size: 18px;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 20px;
+    box-shadow: 0px 0px 10px rgba(88, 166, 255, 0.6);
+} */
+
+/* button:hover {
+    background-color: #1F6FEB;
+} */
+
+button {
+    width: 50%;
+    padding: 10px;
+    background-color: #01EEFF; /* Neon Blue */
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 0 0 10px #01EEFF, 0 0 20px #01EEFF; /* Glow Effect */
+    transition: 0.3s;
+
+    
+}
+
+button:hover {
+    box-shadow: 0 0 0px #01EEFF; 
+}
+
+
+
+/* Mobile Small (320px - 374px) */
+@media screen and (min-width: 320px) and (max-width: 374px) {
+    #home {
+        flex-direction: column-reverse;
+        align-items: center;
+        text-align: center;
+        height: auto;
+        padding: 10px;
+    }
+
+    .home-details {
+        max-width: 100%;
+    }
+
+    .home-details h1 {
+        font-size: 24px;
+    }
+
+    .home-details h2 {
+        font-size: 20px;
+    }
+
+    .home-details span {
+        font-size: 16px;
+    }
+
+    .home-details p {
+        font-size: 14px;
+    }
+
+    .link-container {
+        justify-content: center;
+    }
+
+    .link-container a img {
+        width: 20px;
+        height: 20px;
+        margin: 8px;
+        padding: 8px;
+    }
+
+    .my-img {
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+       
+        width: 50%;
+    }
+
+    .img-circle {
+        width: 150px;
+        height: 150px;
+    }
+
+    .img-circle img {
+        height: 100%;
+    }
+
+    button {
+        width: 80%;
+        font-size: 14px;
+    }
+}
+
+/* Mobile Medium (375px - 424px) */
+@media screen and (min-width: 375px) and (max-width: 424px) {
+    #home {
+        flex-direction: column-reverse;
+        align-items: center;
+        text-align: center;
+        height: auto;
+        padding: 12px;
+    }
+
+    .home-details {
+        max-width: 100%;
+    }
+
+    .home-details h1 {
+        font-size: 26px;
+    }
+
+    .home-details h2 {
+        font-size: 22px;
+    }
+
+    .home-details span {
+        font-size: 18px;
+    }
+
+    .home-details p {
+        font-size: 16px;
+    }
+
+    .link-container {
+        justify-content: center;
+    }
+
+    .link-container a img {
+        width: 22px;
+        height: 22px;
+        margin: 10px;
+        padding: 10px;
+    }
+
+    .my-img {
+        width: 100%;
+    }
+
+    .img-circle {
+        width: 175px;
+        height: 175px;
+    }
+
+    .img-circle img {
+        height: 100%;
+    }
+
+    button {
+        width: 80%;
+        font-size: 16px;
+    }
+}
+
+/* Mobile Large (425px - 767px) */
+@media screen and (min-width: 425px) and (max-width: 767px) {
+    #home {
+        flex-direction: column-reverse;
+        align-items: center;
+        text-align: center;
+        height: auto;
+        padding: 14px;
+    }
+
+    .home-details {
+        max-width: 100%;
+    }
+
+    .home-details h1 {
+        font-size: 28px;
+    }
+
+    .home-details h2 {
+        font-size: 24px;
+    }
+
+    .home-details span {
+        font-size: 20px;
+    }
+
+    .home-details p {
+        font-size: 18px;
+    }
+
+    .link-container {
+        justify-content: center;
+    }
+
+    .link-container a img {
+        width: 24px;
+        height: 24px;
+        margin: 12px;
+        padding: 12px;
+    }
+
+    .my-img {
+        width: 100%;
+    }
+
+    .img-circle {
+        width: 200px;
+        height: 200px;
+    }
+
+    .img-circle img {
+        height: 100%;
+    }
+
+    button {
+        width: 80%;
+        font-size: 18px;
+    }
+}
+
+/* Tablet (768px - 1023px) */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    #home {
+        flex-direction: column-reverse;
+        align-items: center;
+        text-align: center;
+        height: auto;
+        padding: 16px;
+    }
+
+    .home-details {
+        max-width: 100%;
+    }
+
+    .home-details h1 {
+        font-size: 30px;
+    }
+
+    .home-details h2 {
+        font-size: 26px;
+    }
+
+    .home-details span {
+        font-size: 22px;
+    }
+
+    .home-details p {
+        font-size: 20px;
+    }
+
+    .link-container {
+        justify-content: center;
+    }
+
+    .link-container a img {
+        width: 26px;
+        height: 26px;
+        margin: 14px;
+        padding: 14px;
+    }
+
+    .my-img {
+        width: 100%;
+    }
+
+    .img-circle {
+        width: 250px;
+        height: 250px;
+    }
+
+    .img-circle img {
+        height: 100%;
+    }
+
+    button {
+        width: 80%;
+        font-size: 20px;
+    }
+}
+
+/* Laptop (1024px - 1439px) */
+@media screen and (min-width: 1024px) and (max-width: 1439px) {
+    #home {
+        flex-direction: row;
+        align-items: center;
+        text-align: left;
+        height: auto;
+        padding: 18px;
+    }
+
+    .home-details {
+        max-width: 50%;
+    }
+
+    .home-details h1 {
+        font-size: 32px;
+    }
+
+    .home-details h2 {
+        font-size: 28px;
+    }
+
+    .home-details span {
+        font-size: 24px;
+    }
+
+    .home-details p {
+        font-size: 22px;
+    }
+
+    .link-container {
+        justify-content: flex-start;
+    }
+
+    .link-container a img {
+        width: 28px;
+        height: 28px;
+        margin: 16px;
+        padding: 16px;
+    }
+
+    .my-img {
+        width: 50%;
+    }
+
+    .img-circle {
+        width: 300px;
+        height: 300px;
+    }
+
+    .img-circle img {
+        height: 100%;
+    }
+
+    button {
+        width: 50%;
+        font-size: 22px;
+    }
+}
+
+/* Laptop Large (1440px and above) */
+@media screen and (min-width: 1440px) {
+    #home {
+        flex-direction: row;
+        align-items: center;
+        text-align: left;
+        height: auto;
+        padding: 20px;
+    }
+
+    .home-details {
+        max-width: 50%;
+    }
+
+    .home-details h1 {
+        font-size: 34px;
+    }
+
+    .home-details h2 {
+        font-size: 30px;
+    }
+
+    .home-details span {
+        font-size: 26px;
+    }
+
+    .home-details p {
+        font-size: 24px;
+    }
+
+    .link-container {
+        justify-content: flex-start;
+    }
+
+    .link-container a img {
+        width: 30px;
+        height: 30px;
+        margin: 18px;
+        padding: 18px;
+    }
+
+    .my-img {
+        width: 50%;
+    }
+
+    .img-circle {
+        width: 350px;
+        height: 350px;
+    }
+
+    .img-circle img {
+        height: 100%;
+    }
+
+    button {
+        width: 50%;
+        font-size: 24px;
+    }
+}

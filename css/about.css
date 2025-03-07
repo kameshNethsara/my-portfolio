@@ -1,0 +1,242 @@
+body {
+    margin: 0;
+}
+
+#about {
+    display: flex;
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+    height: 100vh;
+    margin: 32px;
+}
+
+.my-img-about .img-circle-border {
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    border: 1rem solid #01EEFF;
+    box-shadow: 0px 0px 20px #01EEFF;
+    display: flex;
+    justify-content: center; /* Center image horizontally */
+    align-items: center; /* Center image vertically */
+    overflow: hidden; /* Ensure the image stays within the circle */
+}
+
+.my-img-about .img-circle-border img {
+    width: 100%; /* Ensure the image fits within the circle */
+    height: 100%; /* Ensure the image fits within the circle */
+    object-fit: cover; /* Crop the image to fit the circle without distortion */
+    object-position: center top; /* Adjust this to focus on the face */
+    border-radius: 50%; /* Ensure the image is circular */
+}
+
+.about-me {
+    margin-left: 40px; /* Add some spacing between the image and text */
+    max-width: 600px; /* Limit the width of the text section */
+}
+
+
+
+/* Mobile Small (320px - 374px) */
+@media screen and (min-width: 320px) and (max-width: 374px) {
+    #about {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        height: auto;
+        margin: 10px;
+    }
+
+    .my-img-about .img-circle-border {
+        width: 250px;
+        height: 250px;
+        border: 1rem solid #01EEFF;
+    }
+
+    .my-img-about .img-circle-border img {
+        object-position: center top; /* Adjust to focus on the face */
+    }
+
+    .about-me {
+        position: relative;
+        left: auto;
+        margin-top: 10px;
+        font-size: 12px;
+    }
+
+    .about-me p {
+        font-size: 12px;
+    }
+
+    .about-me button {
+        font-size: 12px;
+    }
+}
+
+/* Mobile Medium (375px - 424px) */
+@media screen and (min-width: 375px) and (max-width: 424px) {
+    #about {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        height: auto;
+        margin: 12px;
+    }
+
+    .my-img-about .img-circle-border {
+        width: 250px;
+        height: 250px;
+        border: 1rem solid #01EEFF;
+    }
+
+    .my-img-about .img-circle-border img {
+        object-position: center top; /* Adjust to focus on the face */
+    }
+
+    .about-me {
+        position: relative;
+        left: auto;
+        margin-top: 12px;
+        font-size: 14px;
+    }
+
+    .about-me p {
+        font-size: 14px;
+    }
+
+    .about-me button {
+        font-size: 14px;
+    }
+}
+
+/* Mobile Large (425px - 767px) */
+@media screen and (min-width: 425px) and (max-width: 767px) {
+    #about {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        height: auto;
+        margin: 14px;
+    }
+
+    .my-img-about .img-circle-border {
+        width: 250px;
+        height: 250px;
+        border: 1rem solid #01EEFF;
+    }
+
+    .my-img-about .img-circle-border img {
+        object-position: center top; /* Adjust to focus on the face */
+    }
+
+    .about-me {
+        position: relative;
+        left: auto;
+        margin-top: 14px;
+        font-size: 16px;
+    }
+
+    .about-me p {
+        font-size: 16px;
+    }
+
+    .about-me button {
+        font-size: 16px;
+    }
+}
+
+/* Tablet (768px - 1023px) */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    #about {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        height: auto;
+        margin: 16px;
+    }
+
+    .my-img-about .img-circle-border {
+        width: 250px;
+        height: 250px;
+        border: 1rem solid #01EEFF;
+    }
+
+    .about-me {
+        position: relative;
+        left: auto;
+        margin-top: 16px;
+        font-size: 18px;
+    }
+
+    .about-me p {
+        font-size: 18px;
+    }
+
+    .about-me button {
+        font-size: 18px;
+    }
+}
+
+/* Laptop (1024px - 1439px) */
+@media screen and (min-width: 1024px) and (max-width: 1439px) {
+    #about {
+        flex-direction: row;
+        align-items: center;
+        text-align: left;
+        height: auto;
+        margin: 18px;
+    }
+
+    .my-img-about .img-circle-border {
+        width: 300px;
+        height: 300px;
+        border: 1rem solid #01EEFF;
+    }
+
+    .about-me {
+        position: relative;
+        left: auto;
+        margin-top: 18px;
+        font-size: 20px;
+    }
+
+    .about-me p {
+        font-size: 20px;
+    }
+
+    .about-me button {
+        font-size: 20px;
+    }
+}
+
+/* Laptop Large (1440px and above) */
+@media screen and (min-width: 1440px) {
+    #about {
+        flex-direction: row;
+        align-items: center;
+        text-align: left;
+        height: auto;
+        margin: 20px;
+    }
+
+    .my-img-about .img-circle-border {
+        width: 350px;
+        height: 350px;
+        border: 1rem solid #01EEFF;
+    }
+
+    .about-me {
+        position: relative;
+        left: auto;
+        margin-top: 20px;
+        font-size: 22px;
+    }
+
+    .about-me p {
+        font-size: 22px;
+    }
+
+    .about-me button {
+        font-size: 22px;
+    }
+}

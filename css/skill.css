@@ -1,0 +1,193 @@
+body {
+    margin: 0;
+    background-color: #1E1E2E; /* Dark background */
+    color: white; /* Text color */
+    font-family: Arial, sans-serif;
+}
+
+#skills {
+    text-align: center;
+    padding: 20px;
+
+    height: 100vh;
+}
+
+#skills h2 {
+    font-size: 28px;
+    font-weight: bold;
+    /* color: #01EEFF;  */
+}
+
+.progress-bar-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two columns layout */
+    gap: 32px;
+ 
+  
+}
+
+.progress-bar {
+    /* display: flex;
+    align-items: center;
+    justify-content: space-between; */
+}
+
+.progress-bar p {
+    font-size: 18px;
+    font-weight: bold;
+    
+    
+}
+progress {
+    width: 100%;
+    height: 15px;
+    border-radius: 10px;
+    overflow: hidden;
+    
+}
+
+/* Webkit (Chrome, Safari, Edge) */
+progress::-webkit-progress-bar {
+    background-color: #444; /* Darker background */
+    border-radius: 10px;
+}
+
+progress::-webkit-progress-value {
+    background-color: #01EEFF; /* Progress color */
+    border-radius: 10px;
+}
+
+/* Firefox */
+progress::-moz-progress-bar {
+    background-color: #01EEFF;
+    border-radius: 10px;
+}
+
+
+
+
+/* Mobile Small (320px - 374px) */
+@media screen and (min-width: 320px) and (max-width: 374px) {
+    #skills {
+        height: auto;
+        padding: 10px;
+    }
+
+    .progress-bar-container {
+        grid-template-columns: 1fr; /* Single column layout */
+        gap: 10px;
+    }
+
+    .progress-bar p {
+        font-size: 14px;
+    }
+
+    progress {
+        height: 10px;
+    }
+}
+
+/* Mobile Medium (375px - 424px) */
+@media screen and (min-width: 375px) and (max-width: 424px) {
+    #skills {
+        height: auto;
+        padding: 12px;
+    }
+
+    .progress-bar-container {
+        grid-template-columns: 1fr; /* Single column layout */
+        gap: 12px;
+    }
+
+    .progress-bar p {
+        font-size: 15px;
+    }
+
+    progress {
+        height: 12px;
+    }
+}
+
+/* Mobile Large (425px - 767px) */
+@media screen and (min-width: 425px) and (max-width: 767px) {
+    #skills {
+        height: auto;
+        padding: 14px;
+    }
+
+    .progress-bar-container {
+        grid-template-columns: 1fr; /* Single column layout */
+        gap: 14px;
+    }
+
+    .progress-bar p {
+        font-size: 16px;
+    }
+
+    progress {
+        height: 14px;
+    }
+}
+
+/* Tablet (768px - 1023px) */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    #skills {
+        height: auto;
+        padding: 16px;
+    }
+
+    .progress-bar-container {
+        grid-template-columns: repeat(1, 1fr); /* Two columns layout */
+        gap: 16px;
+    }
+
+    .progress-bar p {
+        font-size: 17px;
+    }
+
+    progress {
+        height: 16px;
+    }
+}
+
+/* Laptop (1024px - 1439px) */
+@media screen and (min-width: 1024px) and (max-width: 1439px) {
+    #skills {
+        height: auto;
+        padding: 18px;
+    }
+
+    .progress-bar-container {
+        grid-template-columns: repeat(2, 1fr); /* Two columns layout */
+        gap: 18px;
+    }
+
+    .progress-bar p {
+        font-size: 18px;
+    }
+
+    progress {
+        height: 18px;
+    }
+}
+
+/* Laptop Large (1440px and above) */
+@media screen and (min-width: 1440px) {
+    #skills {
+        height: auto;
+        padding: 20px;
+    }
+
+    .progress-bar-container {
+        grid-template-columns: repeat(2, 1fr); /* Two columns layout */
+        gap: 20px;
+    }
+
+    .progress-bar p {
+        font-size: 20px;
+    }
+
+    progress {
+        height: 20px;
+    }
+}
